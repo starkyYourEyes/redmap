@@ -1,0 +1,1 @@
+<view><view class="map-body"><view class="page-section page-section-gap"><map latitude="{{latitude}}" longitude="{{longitude}}" markers="{{markers}}" include-points="{{true}}" scale="4" joinCluster="{{true}}" data-event-opts="{{[['markertap',[['markClickHandler',['$event']]]]]}}" bindmarkertap="__e"></map></view></view></view>

@@ -1,0 +1,136 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.add-info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  font-size: 18px;
+}
+.ontime-info {
+  border-bottom: 1px solid #efefef;
+  margin-bottom: 10px;
+}
+.outbox {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+.base-info {
+  text-align: center;
+  font-size: 36rpx;
+  font-weight: bold;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #efefef;
+  padding-bottom: 6px;
+}
+.intro {
+  border-bottom: 1px solid #efefef;
+  margin-bottom: 10px;
+  text-indent: 2em;
+  height: 400rpx;
+  background-image: url(data:image/jpeg;base64,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);
+}
+.intro .text {
+  padding-left: 12rpx;
+  padding-top: 10rpx;
+  padding-bottom: 15rpx;
+  padding-right: 16rpx;
+  font-size: 18px;
+  z-index: 99;
+}
+.bkgBox {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 3%;
+  margin-right: 3%;
+  padding: 20rpx 20rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  border-radius: 10px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  background-color: #FFFFFF;
+  border: 3px dashed #e0e0e0;
+}
+swiper {
+  height: 360rpx;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+swiper .swiper-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  background-position: center;
+  height: 360rpx;
+}
+swiper .swiper-item image {
+  height: 360rpx;
+  margin: auto;
+  /*图片居中*/
+}
+.general {
+  background-image: url("https://redmap.oss-cn-hangzhou.aliyuncs.com/bkgimg.jpg");
+  /* 背景图垂直、水平均居中 */
+  background-position: center center;
+  /* 背景图不平铺 */
+  background-repeat: no-repeat;
+  /* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 */
+  background-attachment: fixed;
+  /* 让背景图基于容器大小伸缩 */
+  background-size: cover;
+  /* 设置背景颜色，背景图加载过程中会显示背景色 */
+  background-color: #464646;
+}
+.background {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-size: 100% 100%;
+  z-index: -1;
+}
+

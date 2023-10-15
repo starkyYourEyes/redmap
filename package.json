@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@escook/request-miniprogram": "^0.2.1",
+    "three-obj-loader-es6": "^0.0.1"
+  }
+}

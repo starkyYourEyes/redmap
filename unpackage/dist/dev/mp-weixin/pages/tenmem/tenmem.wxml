@@ -1,0 +1,1 @@
+<view class="general"><view><view class="memBox"><block wx:for="{{bkgImgs}}" wx:for-item="item" wx:for-index="i" wx:key="i"><view class="index-container"><navigator class="imgsOfMem" url="{{'/subpkg/mems/mems?id='+i}}"><text class="infoTxt">{{item.name}}</text><image src="{{item.img}}"></image></navigator></view></block></view></view></view>

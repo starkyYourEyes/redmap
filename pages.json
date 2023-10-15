@@ -1,0 +1,56 @@
+{
+	"pages": [{
+		"path": "pages/redmap/redmap",
+		"style": {}
+	}, {
+		"path": "pages/tenmem/tenmem",
+		"style": {}
+	}, {
+		"path": "pages/rout/rout",
+		"style": {}
+	}, {
+		"path": "subpkg/mapdetail/mapdetail",
+		"style": {
+			
+		}
+	}    ,{
+            "path" : "subpkg/mems/mems",
+            "style" : {}
+        }
+        ,{
+            "path" : "subpkg/nav/nav",
+            "style" : {}
+        }
+        ,{
+            "path" : "subpkg/search/search",
+            "style" : {}
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "dark",
+		"navigationBarTitleText": "红色地图",
+		"navigationBarBackgroundColor": "#FF0000",
+		"backgroundColor": "#FFFFFF"
+	},
+	
+	"tabBar": {
+		"selectedColor": "#FF0000",
+		"list": [{
+			"pagePath": "pages/redmap/redmap",
+			"text": "红色地图",
+			"iconPath": "static/tab_icons/map.png",
+			"selectedIconPath": "static/tab_icons/map_active.png"
+		}, {
+			"pagePath": "pages/tenmem/tenmem",
+			"text": "纪念碑",
+			"iconPath": "static/tab_icons/mem.png",
+			"selectedIconPath": "static/tab_icons/mem_active.png"
+		}, {
+			"pagePath": "pages/rout/rout",
+			"text": "景区路线",
+			"iconPath": "static/tab_icons/rout.png",
+			"selectedIconPath": "static/tab_icons/rout_active.png"
+		}]
+	}
+	
+}
