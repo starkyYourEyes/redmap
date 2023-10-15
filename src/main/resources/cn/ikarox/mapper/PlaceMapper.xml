@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.ikarox.mapper.PlaceMapper">
+
+    <select id="getRout"  resultType="cn.ikarox.pojo.Rout">
+        select id, name, loc from redmap.rout
+        <where>
+            <if test="str != null">
+                name like concat('%', #{str}, '%')
+            </if>
+        </where>
+    </select>
+
+</mapper>

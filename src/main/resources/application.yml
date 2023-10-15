@@ -1,0 +1,47 @@
+# yml??????properties???????? application
+spring:
+  # ?????
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    # jdbc:sqlserver://localhost:1433;database=demo;;encrypt=true;trustServerCertificate=true
+    # ??sqlserver?????
+    url: jdbc:mysql://47.120.39.238:3306/redmap
+    username: root
+    password: 34pCfHwdCpCTT2jc
+
+  jackson:
+    serialization:
+      FAIL_ON_EMPTY_BEANS: false
+
+
+  servlet:
+    multipart:
+      # ?????????
+      max-file-size: 10MB
+      max-request-size: 100MB
+#  servlet:
+#    multipart:
+#      # ?????????
+#      max-file-size: 10MB
+#      max-request-size: 100MB
+
+# mybatis ??
+mybatis:
+  configuration:
+    # ??
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    # ????????
+    map-underscore-to-camel-case: true
+
+#spring??????
+logging:
+  level:
+    org.springframework.jdbc.support.JdbcTransactionManager: debug
+# ???Tomcat???
+server:
+  port: 8081
+  #SSL证书路径 一定要加上classpath:
+  ssl:
+    key-store: classpath:2389372927.pfx
+    key-store-password: x887rjtd
+    key-store-type: pfx
